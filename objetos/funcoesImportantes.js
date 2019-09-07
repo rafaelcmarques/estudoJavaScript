@@ -21,3 +21,14 @@ Object.defineProperty(pessoa, 'dataDeNascimento', {
 pessoa.dataDeNascimento = '30/01/1996'
 console.log(pessoa.dataDeNascimento) // impriu 30/04/1996, pois nas definições das propriedades de dataDeNascimento, foi definido que que não
 //seria possivel alterar o valor da mesma.
+
+
+//object assing
+
+const dest = { a: 1}
+const obj1 = { b: 2}
+const obj2 = { c:3, a: 4}
+
+Object.assign(dest, obj1, obj2 )
+
+/* Caso os objetos tenham mesma chave porem valores difent, o valor e sobreescrito. */
