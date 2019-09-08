@@ -14,7 +14,7 @@ Object.entries(pessoa).forEach(([chave,valor]) => { //usando um destructuring co
 
 Object.defineProperty(pessoa, 'dataDeNascimento', {
     enumerable: true, //torna visivel ao usar o metodo Object.keys
-    writable: false, // deixa alterar o valor 
+    writable: false, // nao deixa alterar o valor 
     value: '30/04/1996' // valor
 })
 
