@@ -12,6 +12,6 @@ console.log(module.exports)
 
 module.exports = {
     aviso: 'Agora sim!!'
-}
+} // forma correta
 
 console.log(module.exports)
