@@ -14,7 +14,7 @@ Object.entries(pessoa).forEach(([chave,valor]) => { //usando um destructuring co
 
 Object.defineProperty(pessoa, 'dataDeNascimento', {
     enumerable: true, //torna visivel ao usar o metodo Object.keys
-    writable: false, // deixa alterar o valor 
+    writable: false, // nao deixa alterar o valor 
     value: '30/04/1996' // valor
 })
 
@@ -27,7 +27,8 @@ console.log(pessoa.dataDeNascimento) // impriu 30/04/1996, pois nas definições
 
 const dest = { a: 1}
 const obj1 = { b: 2}
-const obj2 = { c:3, a: 4}
+const obj2 = { c:3, a: 4}   
+0+++  
 
 Object.assign(dest, obj1, obj2 )
 
