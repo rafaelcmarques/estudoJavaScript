@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+    background-color:yellow;
+    padding: 10px;
+}
+
+.frase {
+    background-color: lightsteelblue;
+    font-size: 20px;
+    font-style: inherit;
+    font-family: Arial;
+    padding-top: 15px;
+    padding-bottom:90px ;
+    padding-right:500px ;
+    padding-left: 10px ;
+    margin-bottom: 40px; 
+   
+}
+
+.descricao{
+    background-color: lightgray; 
+    padding-top: 5px;
+    padding-bottom:15px; 
+    font-size: 25px;     
+    padding-bottom: 10px ;    
+        
+
+}

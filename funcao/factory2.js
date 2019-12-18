@@ -10,3 +10,4 @@ function criarProduto (nome, preco) {
 const prod1 = criarProduto('Iphone', 1234)
 
 console.log(prod1)
+

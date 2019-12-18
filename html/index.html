@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #conteudo {
+        padding: 30px 0px ;
+    }
+</style>
+<body>
+    <header>
+        <h1> Exercicio HTML </h1>
+    </header>
+    <nav>
+        <a href web-modern="exercicios/teste.html" >  00 - Teste </a> | <!--"web-modern" é uma propriedade personalizada, criada por mim-->
+        <a href web-modern="exercicios/texto1.html" > 01- Texto 1</a> |
+        <a href web-modern="exercicios/texto2.html" > 02- Texto 2</a> |
+        <a href web-modern="exercicios/listas.html" > 03- Lista 1</a> |
+        <a href web-modern="exercicios/listasAninhadas.html" > 04- Lista Aninhadas</a> |
+    </nav>
+    <section id="conteudo"> </section>
+    <script>
+        document.querySelectorAll('[web-modern]').forEach((link)=> {
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.getAttribute('web-modern'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+    <footer>
+        <br>
+        Curso de Web Moderno
+    </footer>
+</body>
+</html>
